@@ -25,9 +25,9 @@ class main{
 
         $addFee = ($a + $b + $c + $d);
 
-        echo ("Jumlah Karakter : " .($this->letter)) ."<BR />";
-        echo ("Tambahan biayanya senilai : " .($addFee)) ." Rupiah <BR />";
-        echo ("Total biaya yang harus dibayar : " .($this->letter + $addFee)) ." Rupiah <BR />";
+        echo ("Jumlah Karakter : " .($this->letter)) ."\n";
+        echo ("Tambahan biayanya senilai : " .($addFee)) ." Rupiah \n";
+        echo ("Total biaya yang harus dibayar : " .($this->letter + $addFee)) ." Rupiah \n";
     }    
 }
 
