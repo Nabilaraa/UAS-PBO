@@ -1,13 +1,8 @@
 <?php
 
-class char extends main{
+require_once "machine.php";
 
-    public $letter;
-
-    public function __construct($letter)
-    {
-        $this->letter = $letter;
-    }
+class char extends machine{
 
     public function checkLetter()
     {
@@ -15,10 +10,5 @@ class char extends main{
         echo("Jumlah '#' dalam kata : ".substr_count($this->letter, "#")."\n");
         echo("Jumlah '2' dalam kata : ".substr_count($this->letter, "2")."\n");
         echo("Jumlah '@' dalam kata : ".substr_count($this->letter, "@")."\n");
-
     }
 }
-
-$letter = "@Kamu yang berjuang, semangat yok. #no.22 " ;
-$char = new char($letter);
-$char->checkLetter();
